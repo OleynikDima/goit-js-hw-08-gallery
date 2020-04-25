@@ -11,6 +11,7 @@ const button = document.querySelector('.lightbox__button')
 ///Подключаем Галерею
 const createGallery = galleryItems.map((el)=>{
     return ` <li class="gallery__item">
+
     <a class="gallery__link" href="${el.original}">
     <img
     class="gallery__image"

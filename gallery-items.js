@@ -1,5 +1,3 @@
-'use script'
-
 export default [
   {
     preview:
