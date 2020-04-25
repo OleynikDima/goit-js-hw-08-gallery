@@ -1,6 +1,6 @@
 'use script'
 
-import galleryItems from "../js/gallery-items.js";
+import galleryItems from "./gallery-items.js";
 
 
 const gallery = document.querySelector('.js-gallery');
@@ -11,7 +11,6 @@ const button = document.querySelector('.lightbox__button')
 ///Подключаем Галерею
 const createGallery = galleryItems.map((el)=>{
     return ` <li class="gallery__item">
-
     <a class="gallery__link" href="${el.original}">
     <img
     class="gallery__image"
