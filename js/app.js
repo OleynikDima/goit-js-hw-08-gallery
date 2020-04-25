@@ -2,7 +2,6 @@
 
 import galleryItems from "../js/gallery-items.js";
 
-
 const gallery = document.querySelector('.js-gallery');
 const divModal = document.querySelector('.js-lightbox');
 const boxImg = document.querySelector('.lightbox__image')
