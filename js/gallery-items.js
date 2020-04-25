@@ -62,4 +62,11 @@ export default [
       'https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg',
     description: 'Lighthouse Coast Sea',
   },
+  {
+    preview:
+      'https://bipbap.ru/wp-content/uploads/2018/06/4-640x360.jpg',
+    original:
+      '#',
+    description: 'Lighthouse Coast Sea',
+  },
 ];
