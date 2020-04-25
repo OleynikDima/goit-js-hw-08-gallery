@@ -1,6 +1,6 @@
 'use script'
 
-import galleryItems from "/gallery-items.js";
+import galleryItems from "../js/gallery-items.js";
 
 
 const gallery = document.querySelector('.js-gallery');
