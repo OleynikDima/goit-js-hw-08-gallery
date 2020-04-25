@@ -29,7 +29,6 @@ gallery.addEventListener('click', handClick);
 button.addEventListener('click', closeModal);
 //дополнительное задания -- закрываем по клику
 divModal.addEventListener('click', closeModal);
-divModal.addEventListener('keydown', closeModal)
 
 // // Создаем класс и задаем src = путь
 function handClick(e){
@@ -39,16 +38,37 @@ function handClick(e){
     }
     divModal.classList.add('is-open')
     boxImg.src = e.target.dataset.source
+    document.addEventListener('keydown', closeEsc)
 }
 
 /// закрываем модальное окно 
 function closeModal(e){
-    if (e.target === boxImg){
+    if (e && e.target === boxImg){
         return;
     }
     divModal.classList.remove('is-open');
     boxImg.src = '';
+    document.removeEventListener('keydown', closeEsc)
 }
+
+/// Esc 
+//// перелистывая картинцки leafingЕhrough
+
+function closeEsc(e){
+    const code = e.code
+    if (code === "Escape"){ 
+        closeModal();
+    }else if(code === "ArrowRight"){
+        let find = galleryItems.find((el,ind)=> el.original === e.target.href)
+        if(find === galleryItems.length){
+           
+        }
+        console.log(find);
+    }
+}
+
+
+
 
 
 
