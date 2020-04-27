@@ -68,7 +68,7 @@ body {
   height: 100vh;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 200ms linear;
+  transition: opacity 300ms linear;
 }
 
 .lightbox.is-open {
@@ -95,7 +95,7 @@ body {
   align-items: center;
   justify-content: center;
   transform: scale(0.9);
-  transition: transform 200ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 
 .lightbox__image {
